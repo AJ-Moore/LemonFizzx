@@ -62,5 +62,8 @@
     <ClCompile Include="..\..\source\Collision\PolygonCollider.cpp">
       <Filter>Source Files\Collision</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\Collision\AABBTree.cpp">
+      <Filter>Source Files\Collision</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -30,6 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\Collision\AABB.cpp" />
+    <ClCompile Include="..\..\source\Collision\AABBTree.cpp" />
     <ClCompile Include="..\..\source\Collision\CircleCollider.cpp" />
     <ClCompile Include="..\..\source\Collision\Collider.cpp" />
     <ClCompile Include="..\..\source\Collision\PolygonCollider.cpp" />
@@ -88,16 +89,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\source;$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\source;$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\source;$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\..\..\CitrusCore\source;$(ProjectDir)..\..\..\CitrusCore\libraries\includes;$(ProjectDir)..\..\source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

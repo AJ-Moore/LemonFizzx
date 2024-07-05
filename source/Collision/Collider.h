@@ -43,6 +43,8 @@ namespace LemonFizzx
 		virtual bool CheckCollision(Collider* other);
 
 		const std::string& GetName() const { return m_name; }
+		const AABB& GetAABB() const { return m_aabb; }
+		const glm::vec3& GetPosition() const { return m_position; }
 
 	protected:
 		virtual void Init() = 0;
@@ -50,8 +52,6 @@ namespace LemonFizzx
 
 		template <class ColliderClass, class OtherCollider>
 		void RegisterCollisionFunction(ColliderType type, CollisionFunc<ColliderClass, OtherCollider> collisionFunction);
-		const AABB& GetAABB() const { return m_aabb; }
-		const glm::vec3& GetPosition() const { return m_position; }
 
 	private:
 		std::unordered_map<ColliderType, std::unique_ptr<CollisionFunctionBase>> m_collisionFunctions;
